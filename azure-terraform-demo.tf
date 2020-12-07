@@ -45,7 +45,7 @@ resource "tfe_variable" "azure_client_secret" {
 }
 
 resource "tfe_variable" "azure_appId" {
-  key          = "azure_appId"
+  key          = "appId"
   value        = var.appId
   category     = "terraform"
   workspace_id = tfe_workspace.azure_terraform_demo_setup_ps.id
@@ -53,7 +53,7 @@ resource "tfe_variable" "azure_appId" {
 }
 
 resource "tfe_variable" "azure_password" {
-  key          = "azure_password"
+  key          = "password"
   value        = var.password
   category     = "terraform"
   workspace_id = tfe_workspace.azure_terraform_demo_setup_ps.id
