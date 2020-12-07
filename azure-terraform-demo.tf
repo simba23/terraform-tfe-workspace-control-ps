@@ -44,19 +44,19 @@ resource "tfe_variable" "azure_client_secret" {
   sensitive    = true
 }
 
-resource "tfe_variable" "azure_instance_username" {
-  key          = "azure_instance_username"
-  value        = var.instance_username
+resource "tfe_variable" "azure_appId" {
+  key          = "azure_appId"
+  value        = var.appId
   category     = "terraform"
   workspace_id = tfe_workspace.azure_terraform_demo_setup_ps.id
-  description  = "Instance Username"
+  description  = "Application ID"
 }
 
-resource "tfe_variable" "azure_instance_password" {
-  key          = "azure_instance_password"
-  value        = var.instance_password
+resource "tfe_variable" "azure_password" {
+  key          = "azure_password"
+  value        = var.password
   category     = "terraform"
   workspace_id = tfe_workspace.azure_terraform_demo_setup_ps.id
-  description  = "Instance Password"
+  description  = "Client Password"
   sensitive    = true
 }
