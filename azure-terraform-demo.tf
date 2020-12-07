@@ -5,7 +5,7 @@ resource "tfe_workspace" "azure_terraform_demo_setup_ps" {
   organization   = var.org_name
   queue_all_runs = false
   vcs_repo {
-    identifier     = "simba23/terraform-azure-demo"
+    identifier     = "simba23/terraform-azure-demo-ps"
     branch         = "main"
     oauth_token_id = var.oauth_token_id
   }
