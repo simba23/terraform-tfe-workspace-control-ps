@@ -49,7 +49,7 @@ resource "tfe_variable" "azure_randomvar" {
   value        = var.randomvar
   category     = "terraform"
   workspace_id = tfe_workspace.azure_aks_demo_setup_ps.id
-  description  = "Application ID"
+  description  = "Random Variable"
 }
 
 resource "tfe_variable" "azure_appId" {
