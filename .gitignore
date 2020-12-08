@@ -1,0 +1,7 @@
+*.terraform
+.terraform*
+terraform.tfstate
+remote-backend.tf
+variables.tf.bkup
+*.bkup
+*.orig
