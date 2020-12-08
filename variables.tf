@@ -9,6 +9,10 @@ variable "oauth_token_id" {
   description = "Terraform Enterprise/Cloud VCS oauth token ID (found in settings/VCS)"
 }
 
+variable "randomvar" {
+  description = "Random Variable"
+}
+
 variable "appId" {
   description = "Application ID"
 }
